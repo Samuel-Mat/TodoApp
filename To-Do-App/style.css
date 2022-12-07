@@ -1,0 +1,227 @@
+*{
+ 
+    width: 100%;
+
+}
+    
+
+#body{
+    background-image: linear-gradient(to right, blue , lightblue);
+}
+
+
+#begruessung{
+    display: flex;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: goldenrod;
+    
+
+}
+
+#erstellen{
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    
+
+}
+
+.inputfield{
+    background-color: white;
+    width: 50%;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 2%;
+    max-width: 630px;
+    max-height: 114px;
+
+   
+   
+}
+#txt{
+    height: 100px; 
+    resize: none;
+    border: solid 5px orange;
+}
+#date{
+width: 90%;
+height: 100%;
+padding: 0;
+border: none;
+background-color: white;
+}
+.labinp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    border: solid 5px orange;
+    background-color: white;
+    max-width: 197px;
+    max-height: 50px;
+}
+#prio{
+    margin-left: 2%;
+}
+#priority{
+    width:90%;
+    height: 100%;
+    
+
+}
+#label{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+#tagchoice{
+    margin-left: 2%;
+}
+#tags{
+    width: 32%;
+    margin-left: 2%;
+    width: 90%;
+}
+#tags:hover{
+    cursor: pointer;
+}
+#row2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+
+#bestaetigen{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#createbtn{
+    width: 20%;
+    height: 40px;
+    background-color: orange;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    border-color: darkgoldenrod;
+    font-family: 'Oswald', sans-serif;
+    max-width:246px;
+    max-height: 40px;
+}
+
+#createbtn:hover{
+    cursor: pointer;
+    background-color:goldenrod;
+}
+
+#todoList{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    max-height: 305px;
+    text-align: center;
+    
+    
+}
+#showTodosText{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: goldenrod;
+}
+#show{
+    width: 50%;
+    max-width: 616px;
+    max-height: 18px;
+    text-align: center;
+    
+}
+.showlist{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#business{
+    display: none;
+}
+
+#private{
+    display: none;
+}
+
+.ToDo{
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    justify-content: center;
+    
+    width: 70%;
+    height: 150px;
+    
+   
+    margin-bottom: 2%;
+    max-width: 1272px;
+    max-height: 199px;
+   
+}
+.todoText{
+ height: 80px;
+ width: 100%;
+ resize: none;
+ margin-left: 2%;
+}
+.full{
+    display: flex;
+    flex-direction: row;
+    border: solid 5px orange;
+    align-items: center;
+    background-color: white;
+    max-width: 862px;
+    max-height: 110px;
+}
+.todoMid{
+    margin-left: 9%;
+}
+.todoPrio{
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ height: 100%;
+ font-size: xx-large;
+}
+.todoBtns{
+    display: flex;
+    height: 100%;
+    margin-left: 10%;
+    flex-direction: column;
+
+}
+.deleteBtn{
+ margin-top: 10%;
+ width: 40%;
+}
+.deleteBtn:hover{
+    cursor: pointer;
+}
+
+.editBtn{
+    width: 40%;
+}
+.editBtn:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>To-Do App</title>
+  </head>
+  <body id="body">
+    <script src="app.js"></script>
+    <div id="begruessung">
+      <p>
+        Herzlich Willkommen auf der TodoList App <br />Hier können Sie Todos
+        erstellen und auch verwalten
+      </p>
+    </div>
+
+    <div id="erstellen">
+      <textarea name="text" id="txt" class="inputfield" placeholder="Text" required maxlength="255" ></textarea>
+      <div id="row2">
+        <div class="labinp">
+          <label id="datelabel" for="html">Date until</label>
+      <input
+        type="datetime-local"
+        id="date"
+        class="inputfield"
+        required
+      />
+    </div>
+      <div class="labinp" id="prio">
+      <label id="label"for="html">Priority</label>
+      <input type="range" id="priority" min="0" max="10"/>
+    </div>
+    <div class="labinp" id="tagchoice">
+      <label id="taglabel" for="html">Choose a Tag</label>
+      <select id="tags" name="Tags" onchange="CreateTag()">
+        <option value="business">Business</option>
+        <option value="private">Private</option>
+        <option id="new"value="new">Create New Tag</option>
+        </select>
+      </div>
+    </div>
+      <input type="submit" id="createbtn" onclick="CreateToDo()"/>
+    </div>
+   
+    <div id="todoList">
+      <div id="showTodosText">
+        <p>Show Todos</p>
+      </div>
+      <select id="show" name="show" onchange="ShowTags()">
+        <option value="all">All</option>
+        <option value="business">Business</option>
+        <option value="private">Private</option>
+        </select>    
+      <ul id="all" class="showlist">
+        
+      </ul>
+      <ul id="business" class="showlist">
+        
+      </ul>
+      <ul id="private" class="showlist">
+        
+      </ul>
+    </div>
+  </body>
+</html>

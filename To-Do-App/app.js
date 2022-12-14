@@ -1,7 +1,7 @@
 let tagCounter = 0;
 let createCounter = 0;
 var dateUntils;
-//setInterval(TimeCounter(), 1000);
+
 
 //If you press the submit button
 function CreateToDo() {
@@ -133,13 +133,7 @@ function ShowTags(){
 }
 
 
-function TimeCounter(){
- var dates = document.getElementsByClassName("todoDate");
- for(let i = 0; i < dates.length; i++ )
- {
-    var timeRemain = Math.abs(date - dateUntils[i] )
- }
-}
+
 
 function Validate(){
   var check = true;
